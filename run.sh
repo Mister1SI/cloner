@@ -1,2 +1,2 @@
-gcc main.c -o main
+gcc -Wno-implicit-function-declaration  main.c -o main
 ./main
