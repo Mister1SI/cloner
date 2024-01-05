@@ -38,6 +38,9 @@ int main() {
 	int newfd = open(new_filename_buf, O_CREAT | O_WRONLY, 00644);
 	write(newfd, filebuf, filesize);
 
+	// dont be bad
+	free(filebuf);
+
 	close(fd);
 	close(newfd);
 
